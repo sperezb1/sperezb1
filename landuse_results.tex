@@ -1,0 +1,44 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Impact of Trade on Different Land Use Types\label{tab:landuse}}
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{3}{c}{Dependent Variable}                           \\\cmidrule(lr){2-4}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{Total arable land (hectares)}&\multicolumn{1}{c}{Permanent crop land (hectares)}&\multicolumn{1}{c}{Permanent meadows and pastures (hectares)}\\
+\midrule
+Log Trade Value     &       1.132         &       0.772         &      -2.680         \\
+                    &     (1.107)         &     (0.578)         &     (2.007)         \\
+Log GDP per capita  &      -3.121         &       3.010         &      -0.127         \\
+                    &     (2.043)         &     (2.043)         &     (5.066)         \\
+Climate Policy Stringency&       0.000         &      -0.217         &       0.427         \\
+                    &     (0.076)         &     (0.187)         &     (0.451)         \\
+refYear=2013        &       0.000         &       0.000         &       0.000         \\
+                    &         (.)         &         (.)         &         (.)         \\
+refYear=2014        &       0.264         &       0.602         &      -1.616         \\
+                    &     (0.259)         &     (0.632)         &     (1.575)         \\
+refYear=2015        &       0.297         &       1.057         &      -2.479         \\
+                    &     (0.615)         &     (0.794)         &     (1.926)         \\
+refYear=2016        &       0.012         &       1.394         &      -2.712         \\
+                    &     (0.776)         &     (1.043)         &     (2.529)         \\
+refYear=2017        &       0.617         &       0.974         &      -2.986         \\
+                    &     (0.703)         &     (0.732)         &     (1.961)         \\
+refYear=2018        &       0.855         &       1.222         &      -3.783\sym{*}  \\
+                    &     (0.582)         &     (0.698)         &     (1.817)         \\
+refYear=2019        &       0.730         &       1.625         &      -4.221         \\
+                    &     (0.815)         &     (0.912)         &     (2.328)         \\
+refYear=2020        &       0.541         &       1.889         &      -4.203         \\
+                    &     (1.207)         &     (1.029)         &     (2.768)         \\
+_cons               &      23.071         &     -38.424         &     162.833\sym{**} \\
+                    &    (14.535)         &    (20.764)         &    (50.989)         \\
+\midrule
+R-squared           &       0.460         &       0.422         &       0.477         \\
+Observations        &          64         &          64         &          64         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize * p<0.10, ** p<0.05, *** p<0.01}\\
+\multicolumn{4}{l}{\footnotesize All models include year fixed effects}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

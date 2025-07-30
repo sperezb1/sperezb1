@@ -1,0 +1,42 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Impact of Trade Openness on Different Land Use Types using Lagged Effects\label{tab:landuse}}
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{3}{c}{Dependent Variable}                           \\\cmidrule(lr){2-4}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{Total arable land (hectares)}&\multicolumn{1}{c}{Permanent crop land (hectares)}&\multicolumn{1}{c}{Permanent meadows and pastures (hectares)}\\
+\midrule
+L.ln_trade          &    1.07e+00         &    9.50e-01\sym{**} &   -3.04e+00\sym{*}  \\
+                    &  (1.20e+00)         &  (3.72e-01)         &  (1.57e+00)         \\
+Log GDP per capita  &   -3.41e+00         &    1.05e+00         &    4.11e+00         \\
+                    &  (2.21e+00)         &  (7.09e-01)         &  (2.68e+00)         \\
+Climate Policy Stringency&    6.92e-02         &   -9.59e-02\sym{**} &    5.64e-02         \\
+                    &  (5.35e-02)         &  (3.96e-02)         &  (6.49e-02)         \\
+refYear=2014        &    0.00e+00         &    0.00e+00         &    0.00e+00         \\
+                    &         (.)         &         (.)         &         (.)         \\
+refYear=2015        &   -2.04e-01         &    4.95e-02         &    2.13e-01         \\
+                    &  (6.24e-01)         &  (1.22e-01)         &  (8.40e-01)         \\
+refYear=2016        &   -3.91e-01         &    3.44e-01         &    3.11e-02         \\
+                    &  (7.28e-01)         &  (2.24e-01)         &  (1.00e+00)         \\
+refYear=2017        &    1.33e-01         &    6.32e-02         &   -4.78e-01         \\
+                    &  (7.55e-01)         &  (1.89e-01)         &  (1.06e+00)         \\
+refYear=2018        &    2.68e-01         &    2.19e-01         &   -9.89e-01         \\
+                    &  (7.21e-01)         &  (2.60e-01)         &  (1.10e+00)         \\
+refYear=2019        &    2.72e-01         &    6.42e-01\sym{**} &   -1.61e+00         \\
+                    &  (7.94e-01)         &  (2.49e-01)         &  (1.07e+00)         \\
+refYear=2020        &    1.48e-01         &    7.49e-01\sym{*}  &   -1.39e+00         \\
+                    &  (1.21e+00)         &  (3.56e-01)         &  (1.55e+00)         \\
+_cons               &    2.74e+01\sym{**} &   -2.34e+01\sym{*}  &    1.30e+02\sym{***}\\
+                    &  (1.01e+01)         &  (1.09e+01)         &  (1.74e+01)         \\
+\midrule
+R-squared           &       0.414         &       0.633         &       0.632         \\
+Observations        &          56         &          56         &          56         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize * p<0.10, ** p<0.05, *** p<0.01}\\
+\multicolumn{4}{l}{\footnotesize All models include year fixed effects}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
